@@ -28,7 +28,7 @@ class GameControllerTest {
         Game g = new Game();
         g.setId(1L);
         g.setTitle("Test Game");
-        GameDTO dto = new GameDTO(g); // construtor existente no projeto
+        GameDTO dto = new GameDTO(g);
 
         Mockito.when(gameService.findById(1L)).thenReturn(dto);
 
@@ -39,4 +39,5 @@ class GameControllerTest {
                .andExpect(jsonPath("$.title").value("Test Game"));
     }
 }
+
 
