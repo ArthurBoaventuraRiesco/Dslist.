@@ -1,4 +1,4 @@
-﻿package com.arthur.dslist.services;
+package com.arthur.dslist.services;
 
 import com.arthur.dslist.dto.GameDTO;
 import com.arthur.dslist.entities.Game;
@@ -23,7 +23,7 @@ class GameServiceTest {
     private GameRepository gameRepository;
 
     @InjectMocks
-    private GameService gameService; // NÃO instanciar manualmente
+    private GameService gameService;
 
     @Test
     void shouldReturnGameDTOWhenIdExists() {
